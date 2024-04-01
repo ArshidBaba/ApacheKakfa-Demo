@@ -1,8 +1,8 @@
 from fastapi import APIRouter
 
-from api.routes.bands import router as bands_router
+from api.routes.transactions import router as transactions_router
 
 router = APIRouter()
 
 
-router.include_router(bands_router, prefix="/bands")
+router.include_router(transactions_router, prefix="/transactions")
